@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pytesseract
+Pillow
+opencv-python
+spacy
+streamlit
+requests
+numpy
+regex
+tesseract 
+
