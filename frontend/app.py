@@ -12,9 +12,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-/* ── CONTENT ── */
-.content-area { padding:36px 48px 60px; }
-
 /* ── LANGUAGE SELECTOR ── */
 [data-testid="stMultiSelect"] > div {
     background:rgba(99,102,241,.05) !important;
