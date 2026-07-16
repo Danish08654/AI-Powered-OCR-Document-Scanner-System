@@ -120,7 +120,6 @@ with lang_col:
 with upload_col:
     st.markdown('<span class="section-label">📂 Upload document</span>', unsafe_allow_html=True)
     file = st.file_uploader(
-        "drop-zone",
         type=["png", "jpg", "jpeg", "webp", "bmp"],
         label_visibility="collapsed",
     )
