@@ -48,8 +48,7 @@ st.markdown("""
     transition:all .2 ease !important;
     box-shadow:0 4 24 rgba(99,102,241,.32) !important;
     margin-top:14 !important;
-}
-[data-testid="stButton"] > button:hover {
+} [data-testid="stButton"] > button:hover {
     transform:translateY(-2px) !important;
     box-shadow:0 8px 32px rgba(99,102,241,.52) !important;
     background:linear-gradient(135deg,#4338CA,#4F46E5) !important;
