@@ -64,8 +64,28 @@ Cloud deployment
 
 ---
 
-#  Author
+#  Contributing
 
-Danish Zulfiqar
+Contributions are welcome!
 
---- 
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**Danish Zulfiqar**
+
+**AI Engineer | LLM Engineer | Machine Learning | Computer Vision | Generative AI | MLOps**
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
