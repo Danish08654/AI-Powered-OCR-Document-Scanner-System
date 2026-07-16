@@ -12,18 +12,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-/* ── LANGUAGE SELECTOR ── */
-[data-testid="stMultiSelect"] > div {
-    background:rgba(99,102,241,.05) !important;
-    border:1px solid rgba(99,102,241,.25) !important;
-    border-radius:10px !important;
-}
-[data-testid="stMultiSelect"] span {
-    background:rgba(99,102,241,.2) !important;
-    color:#818CF8 !important;
-    border-radius:6px !important;
-}
-
 /* ── UPLOAD ── */
 .section-label {
     font-family:'Space Grotesk',sans-serif;
