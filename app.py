@@ -1,7 +1,3 @@
-# app.py
-# Production-ready polished version template for your OCR app.
-# Replace your current app.py with this file and keep your OCR logic below.
-
 import streamlit as st
 import numpy as np
 from PIL import Image
