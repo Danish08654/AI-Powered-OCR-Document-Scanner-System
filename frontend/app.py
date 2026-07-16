@@ -36,7 +36,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-/* ── BUTTON ── */
+/* BUTTON */
 [data-testid="stButton"] > button {
     width:100%;
     background:linear-gradient(135deg,#4F46E5,#6366F1) !important;
