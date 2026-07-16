@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import io
 import re
+import easyocr
 
 #  PAGE CONFIG 
 st.set_page_config(
