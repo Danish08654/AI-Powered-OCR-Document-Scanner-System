@@ -13,11 +13,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-#  HERO 
 st.markdown("""
 <div class="hero">
-  </div>
-  <p class="hero-sub">Upload a photo, receipt, form, or handwritten note — Scan and  reads it instantly</p>
+    <h1>📄 AI Document Scanner</h1>
+    <p class="hero-sub">
+        Upload receipts, invoices, forms, business cards, handwritten notes, or screenshots.
+        Extract text instantly with AI-powered OCR.
+    </p>
 </div>
 """, unsafe_allow_html=True)
 
