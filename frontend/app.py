@@ -43,11 +43,11 @@ st.markdown("""
     color:#fff !important; border:none !important;
     border-radius:12 !important; padding:14 28 !important;
     font-family:'Space Grotesk',sans-serif !important;
-    font-size:15px !important; font-weight:600 !important;
+    font-size:15 !important; font-weight:600 !important;
     letter-spacing:.02em !important;
     transition:all .2s ease !important;
-    box-shadow:0 4px 24px rgba(99,102,241,.32) !important;
-    margin-top:14px !important;
+    box-shadow:0 4 24 rgba(99,102,241,.32) !important;
+    margin-top:14 !important;
 }
 [data-testid="stButton"] > button:hover {
     transform:translateY(-2px) !important;
