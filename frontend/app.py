@@ -12,7 +12,243 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed",
 )
+st.markdown("""
+<style>
 
+.block-container{
+    max-width:1300px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+.stApp{
+    background:#f4f7fb;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    border-radius:24px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:46px;
+    margin:0;
+    font-weight:800;
+}
+
+.hero-sub{
+    margin-top:15px;
+    font-size:18px;
+    opacity:.95;
+}
+
+/* cards */
+
+.tip-box,
+.result-card,
+.preview-wrap{
+
+    background:white;
+    border-radius:20px;
+    padding:20px;
+
+    border:1px solid #edf1f5;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+    transition:.25s;
+}
+
+.tip-box:hover,
+.result-card:hover,
+.preview-wrap:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* upload */
+
+section[data-testid="stFileUploader"]{
+
+    border:2px dashed #3b82f6;
+
+    border-radius:20px;
+
+    background:white;
+
+    padding:30px;
+}
+
+/* button */
+
+.stButton>button{
+
+    width:100%;
+
+    border-radius:14px;
+
+    height:55px;
+
+    border:none;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:17px;
+
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+
+    transition:.3s;
+}
+
+.stButton>button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+}
+
+/* image */
+
+img{
+
+    border-radius:18px;
+}
+
+/* text output */
+
+.text-box{
+
+    background:#f8fafc;
+
+    border-radius:14px;
+
+    padding:20px;
+
+    border:1px solid #e5e7eb;
+
+    white-space:pre-wrap;
+
+    font-family:Consolas,monospace;
+
+    line-height:1.6;
+
+    max-height:500px;
+
+    overflow:auto;
+}
+
+/* stats */
+
+.stat-pill{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    text-align:center;
+
+    border:1px solid #eef2f7;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+.val{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#2563eb;
+}
+
+.lbl{
+
+    color:#64748b;
+
+    font-size:14px;
+}
+
+/* success */
+
+.success-banner{
+
+    background:#dcfce7;
+
+    border-left:6px solid #22c55e;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    margin-bottom:25px;
+
+    font-size:16px;
+}
+
+/* confidence */
+
+.conf-row{
+
+    margin-bottom:16px;
+}
+
+.conf-bar-wrap{
+
+    background:#e5e7eb;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    height:9px;
+}
+
+.conf-bar{
+
+    height:9px;
+
+    border-radius:30px;
+}
+
+/* section titles */
+
+.section-label{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#1e293b;
+}
+
+/* footer */
+
+.footer{
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    margin-top:60px;
+
+    font-size:14px;
+}
+
+</style>
+""", unsafe_allow_html=True) 
 st.markdown("""
 <div class="hero">
     <h1>📄 AI Document Scanner</h1>
