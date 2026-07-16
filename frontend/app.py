@@ -39,7 +39,7 @@ st.markdown("""
 /* BUTTON */
 [data-testid="stButton"] > button {
     width:100%;
-    background:linear-gradient(135deg,#4F46E5,#6366F1) !important;
+    background:linear-gradient(135,#4F46E5,#6366F1) !important;
     color:#fff !important; border:none !important;
     border-radius:12px !important; padding:14px 28px !important;
     font-family:'Space Grotesk',sans-serif !important;
