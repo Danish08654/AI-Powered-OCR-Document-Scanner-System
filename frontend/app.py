@@ -17,7 +17,7 @@ st.set_page_config(
     font-family:'Space Grotesk',sans-serif;
     font-size:12;
     font-weight:700;
-    letter-spacing:.1em; text-transform:uppercase;
+    text-transform:uppercase;
     color:#6366F1; margin-bottom:10px; display:block;
 }
 [data-testid="stFileUploader"] {
