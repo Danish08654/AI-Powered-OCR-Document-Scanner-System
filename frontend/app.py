@@ -4,27 +4,23 @@ from PIL import Image
 import io
 import re
 
-# ── PAGE CONFIG ───────────────────────────────────────────────────────────────
+#  PAGE CONFIG 
 st.set_page_config(
-    page_title="ScanIQ · Free OCR Scanner",
+    page_title=" Document Scanner",
     page_icon="🔍",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 
-# ── HERO ─────────────────────────────────────────────────────────────────────
+#  HERO 
 st.markdown("""
 <div class="hero">
-  <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:18px;">
-    <div class="hero-badge"><span class="dot"></span>Powered by EasyOCR</div>
-    <div class="free-badge">✦ 100% Free</div>
   </div>
-  <h1 class="hero-title">Extract text from<br><span>any document</span></h1>
-  <p class="hero-sub">Upload a photo, receipt, form, or handwritten note — ScanIQ reads it instantly. No API key. No cost. Ever.</p>
+  <p class="hero-sub">Upload a photo, receipt, form, or handwritten note — Scan and  reads it instantly</p>
 </div>
 """, unsafe_allow_html=True)
 
-# ── LANGUAGE MAP ─────────────────────────────────────────────────────────────
+#  LANGUAGE MAP 
 LANG_MAP = {
     "English":  "en",
     "Urdu":     "ur",
@@ -40,12 +36,12 @@ LANG_MAP = {
     "Turkish":  "tr",
 }
 
-# ── EASYOCR READER (cached) ───────────────────────────────────────────────────
+#  EASYOCR READER (cached)
 @st.cache_resource(show_spinner=False)
 def get_reader(lang_codes: tuple):
     return easyocr.Reader(list(lang_codes), gpu=False)
 
-# ── OCR FUNCTION ──────────────────────────────────────────────────────────────
+#  OCR FUNCTION
 def run_ocr(pil_image: Image.Image, lang_codes: tuple):
     reader = get_reader(lang_codes)
     img_np = np.array(pil_image.convert("RGB"))
@@ -87,7 +83,7 @@ def conf_color(c: float) -> str:
     if c >= 0.60: return "#F59E0B"
     return "#EF4444"
 
-# ── CONTENT ───────────────────────────────────────────────────────────────────
+# CONTENT 
 st.markdown('<div class="content-area">', unsafe_allow_html=True)
 
 # Language picker + upload row
@@ -142,7 +138,7 @@ with upload_col:
         </div>
         """, unsafe_allow_html=True)
 
-# ── SCAN ─────────────────────────────────────────────────────────────────────
+#  SCAN 
 if file and st.session_state.get("scan_btn"):
 
     st.markdown("""
