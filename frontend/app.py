@@ -12,32 +12,29 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-/*  UPLOAD  */
+st.markdown("""
+<style>
+
+/* ── UPLOAD ── */
+
 .section-label {
-    font-family:'Space Grotesk',sans-serif;
-    font-size:12;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:12px;
     font-weight:700;
     text-transform:uppercase;
-    color:#6366F1; margin-bottom:10px; display:block;
+    color:#6366F1;
+    margin-bottom:10px;
+    display:block;
 }
+
 [data-testid="stFileUploader"] {
     background:rgba(99,102,241,.04) !important;
     border:1.5px dashed rgba(99,102,241,.32) !important;
     border-radius:14px !important;
-    transition:border-color .2s, background .2s;
 }
-[data-testid="stFileUploader"]:hover {
-    border-color:rgba(99,102,241,.65) !important;
-    background:rgba(99,102,241,.08) !important;
-}
-[data-testid="stFileUploader"] section { padding:28px 20px !important; }
 
-/* ── PREVIEW ── */
-.preview-wrap {
-    margin-top:18px; border-radius:14px;
-    overflow:hidden; border:1px solid rgba(99,102,241,.18);
-}
-[data-testid="stImage"] img { border-radius:14px !important; }
+</style>
+""", unsafe_allow_html=True)
 
 /* ── BUTTON ── */
 [data-testid="stButton"] > button {
