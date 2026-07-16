@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-/* ── UPLOAD ── */
+/*  UPLOAD  */
 .section-label {
     font-family:'Space Grotesk',sans-serif;
     font-size:12px; font-weight:700;
