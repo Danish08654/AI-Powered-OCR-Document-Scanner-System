@@ -45,7 +45,7 @@ st.markdown("""
     font-family:'Space Grotesk',sans-serif !important;
     font-size:15 !important; font-weight:600 !important;
     letter-spacing:.02 !important;
-    transition:all .2s ease !important;
+    transition:all .2 ease !important;
     box-shadow:0 4 24 rgba(99,102,241,.32) !important;
     margin-top:14 !important;
 }
