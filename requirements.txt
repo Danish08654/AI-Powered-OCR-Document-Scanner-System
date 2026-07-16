@@ -11,3 +11,6 @@ numpy
 regex
 tesseract 
 easyocr
+opencv-python-headless
+torch
+torchvision
